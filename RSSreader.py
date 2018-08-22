@@ -33,7 +33,7 @@ class NewsView(GridLayout):
         super(NewsView, self).__init__(**kwargs)
         feedurl = sys.argv[1]
         if len(sys.argv)!=2:
-            print("ERROR")
+            print("please input 2 arguements")
             exit()
         else: 
             feed = feedparser.parse(feedurl)
